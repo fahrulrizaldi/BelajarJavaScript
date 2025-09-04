@@ -26,11 +26,27 @@
 //     console.log("Sudah Setengah Perjalanan kawan")
 // }
 
-// fourth commit 
-const iniHari = 'sabtu';
+// // fourth commit 
+// const iniHari = prompt('isikan hari!').toLocaleLowerCase();
 
-if (iniHari === 'senin'){
-    console.log("Selamat Bekerja Kawan !!!")
-}else if (iniHari === 'sabtu'){
-    console.log("Selamat liburan kawan")
+// if (iniHari === 'senin'){
+//     console.log("Selamat Bekerja Kawan !!!")
+// }else if (iniHari === 'sabtu'){
+//     console.log("Selamat liburan kawan")
+// }else {
+//     console.log("Yah biasa aja")
+// }
+
+// kondisi if berlapis 
+const password = prompt("Masukan password !")
+
+if (password.length >= 6) {
+    
+    if (password.indexOf(' ') === -1 ){
+        console.log('Password Valid');
+    }else{
+        console.log('Password tidak boleh ada spasi')
+    }
+}else {
+    console.log('Password Minimal 6 karakter');
 }
