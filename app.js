@@ -61,10 +61,19 @@
 // }
 
 // Operator Logic OR
+// const role = prompt("masukan role mode!")
+
+// if (role === 'admin' || role === 'spv'){
+//     console.log("Akses di terima")
+// }else {
+//     console.log("Akses di tolak")
+// }
+
+// Operator Logic NOT
 const role = prompt("masukan role mode!")
 
-if (role === 'admin' || role === 'spv'){
-    console.log("Akses di terima")
-}else {
+if (role !== 'admin'){
     console.log("Akses di tolak")
+}else {
+    console.log("Akses di terima")
 }
