@@ -51,11 +51,20 @@
 //     console.log('Password Minimal 6 karakter');
 // }
 
-// Oprator Logic And
-const password = prompt("Masukan password !")
+// Operator Logic And
+// const password = prompt("Masukan password !")
 
-if (password.length >= 6 && password.indexOf(' ') === -1 ) {
-    console.log('password Valid');
-} else {
-    console.log('password tidak Valid');
+// if (password.length >= 6 && password.indexOf(' ') === -1 ) {
+//     console.log('password Valid');
+// } else {
+//     console.log('password tidak Valid');
+// }
+
+// Operator Logic OR
+const role = prompt("masukan role mode!")
+
+if (role === 'admin' || role === 'spv'){
+    console.log("Akses di terima")
+}else {
+    console.log("Akses di tolak")
 }
