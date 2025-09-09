@@ -38,15 +38,24 @@
 // }
 
 // kondisi if berlapis 
+//const password = prompt("Masukan password !")
+
+// if (password.length >= 6) {
+    
+//     if (password.indexOf(' ') === -1 ){
+//         console.log('Password Valid');
+//     }else{
+//         console.log('Password tidak boleh ada spasi')
+//     }
+// }else {
+//     console.log('Password Minimal 6 karakter');
+// }
+
+// Oprator Logic And
 const password = prompt("Masukan password !")
 
-if (password.length >= 6) {
-    
-    if (password.indexOf(' ') === -1 ){
-        console.log('Password Valid');
-    }else{
-        console.log('Password tidak boleh ada spasi')
-    }
-}else {
-    console.log('Password Minimal 6 karakter');
+if (password.length >= 6 && password.indexOf(' ') === -1 ) {
+    console.log('password Valid');
+} else {
+    console.log('password tidak Valid');
 }
