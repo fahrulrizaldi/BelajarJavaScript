@@ -70,10 +70,28 @@
 // }
 
 // Operator Logic NOT
-const role = prompt("masukan role mode!")
+// const role = prompt("masukan role mode!")
 
-if (role !== 'admin'){
-    console.log("Akses di tolak")
-}else {
-    console.log("Akses di terima")
+// if (role !== 'admin'){
+//     console.log("Akses di tolak")
+// }else {
+//     console.log("Akses di terima")
+// }
+
+
+// If Alternatif Statement 
+const balonku = prompt ('Input Warna Balon');
+
+switch(balonku){
+    case 'merah':
+    console.log('Balon Saya');
+    break;
+    case 'kuning':
+    console.log('Balon Saya')
+    break;
+    case 'hijau':
+    console.log('Dooooooorr')
+    break;
+    default:
+        console.log('Bukan Balon Saya')
 }
