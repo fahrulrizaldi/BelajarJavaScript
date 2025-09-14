@@ -80,18 +80,31 @@
 
 
 // If Alternatif Statement 
-const balonku = prompt ('Input Warna Balon');
+// const balonku = prompt ('Input Warna Balon');
 
-switch(balonku){
-    case 'merah':
-    console.log('Balon Saya');
-    break;
-    case 'kuning':
-    console.log('Balon Saya')
-    break;
-    case 'hijau':
-    console.log('Dooooooorr')
-    break;
-    default:
-        console.log('Bukan Balon Saya')
-}
+// switch(balonku){
+//     case 'merah':
+//     console.log('Balon Saya');
+//     break;
+//     case 'kuning':
+//     console.log('Balon Saya')
+//     break;
+//     case 'hijau':
+//     console.log('Dooooooorr')
+//     break;
+//     default:
+//         console.log('Bukan Balon Saya')
+// }
+
+// Array indexOf
+const cariAnimal = prompt ('masukan nama hewan !');
+
+const animal = ['kucing', 'ayam' , 'jerapah' , 'gajah' , 'harimau'];
+
+if (animal.indexOf(cariAnimal) === -1)
+{
+    console.log('Tidak ada nama hewan di kebun binatang ini');
+}else (
+    console.log(animal.indexOf(cariAnimal))
+)
+
