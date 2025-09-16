@@ -97,14 +97,19 @@
 // }
 
 // Array indexOf
-const cariAnimal = prompt ('masukan nama hewan !');
+// const cariAnimal = prompt ('masukan nama hewan !');
 
-const animal = ['kucing', 'ayam' , 'jerapah' , 'gajah' , 'harimau'];
+// const animal = ['kucing', 'ayam' , 'jerapah' , 'gajah' , 'harimau'];
 
-if (animal.indexOf(cariAnimal) === -1)
-{
-    console.log('Tidak ada nama hewan di kebun binatang ini');
-}else (
-    console.log(animal.indexOf(cariAnimal))
-)
+// if (animal.indexOf(cariAnimal) === -1)
+// {
+//     console.log('Tidak ada nama hewan di kebun binatang ini');
+// }else (
+//     console.log(animal.indexOf(cariAnimal))
+// )
 
+// perulangan for
+
+for (i = 2 ; i <= 16 ; i*= 2){
+    console.log (i);
+}
