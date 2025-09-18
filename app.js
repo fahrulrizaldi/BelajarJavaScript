@@ -110,6 +110,38 @@
 
 // perulangan for
 
-for (i = 2 ; i <= 16 ; i*= 2){
-    console.log (i);
+// for (i = 2 ; i <= 16 ; i*= 2){
+//     console.log (i);
+// }
+
+//perulangan array
+// const materialAc = ['pipa tembaga','ducttape','kabel','pipa pvc','bracket'];
+
+// for (let i = 0 ; i < materialAc.length ; i++ )
+// {
+//     console.log(i+1, materialAc[i]);
+// }
+
+//nested loop
+// const pilihan = 'abcd';
+
+// for (let i=1 ; i <= 10 ; i++) 
+// {
+//     console.log(`${i}. soal nomor ${i} :`);
+
+//     for (let j = 0 ; j < pilihan.length ; j++)
+//     {
+//         console.log(`${pilihan[j]} . pilihan jawaban` );    
+//     }
+// }
+
+// Perulangan While
+
+const password ='Pass123';
+
+let guess = prompt('Enter The Password');
+while (guess !== password){
+    guess = prompt('Enter The Password!');
 }
+
+alert('congrats! the password is correct');
