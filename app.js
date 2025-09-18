@@ -137,11 +137,50 @@
 
 // Perulangan While
 
-const password ='Pass123';
+// const password ='Pass123';
 
-let guess = prompt('Enter The Password');
-while (guess !== password){
-    guess = prompt('Enter The Password!');
+// let guess = prompt('Enter The Password');
+// while (guess !== password){
+//     guess = prompt('Enter The Password!');
+// }
+
+// alert('congrats! the password is correct');
+
+// kata kunci break
+
+// let input = prompt('hei, say something!');
+
+// while (true){
+//     if (input.toLowerCase() === 'stop') break;
+//     input = prompt(input);
+// }
+
+// alert('ok');
+
+// for (i =1 ; i <= 1000 ; i++){
+//     console.log(i);
+//     if (i === 100) break;
+// }
+
+let maximum = parseInt(prompt('masukan nilai maksimal!'));
+
+while (!maximum){
+    maximum = parseInt(prompt('masukan nilai Maksimal!'));
 }
 
-alert('congrats! the password is correct');
+const targetNum = Math.floor(Math.random() * maximum) +1;
+console.log(targetNum);
+
+let guess = parseInt(prompt('isi tebakan pertama kamu!'));
+let attempts = 1 ;
+while (parseInt(guess) !== targetNum) {
+    attempts++;
+    if (guess > targetNum) {
+        guess = parseInt(prompt('Tebakan terlalu tinggi, tebak lagi!'));
+    }else {
+        guess = parseInt(prompt('tebakan terlalu rendah, tebak lagi!'));
+    }
+
+}
+
+    alert(`selamat tebakan kamu benar!, dengan percobaan ${attempts}`);
