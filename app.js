@@ -162,25 +162,88 @@
 //     if (i === 100) break;
 // }
 
-let maximum = parseInt(prompt('masukan nilai maksimal!'));
+// let maximum = parseInt(prompt('masukan nilai maksimal!'));
 
-while (!maximum){
-    maximum = parseInt(prompt('masukan nilai Maksimal!'));
-}
+// while (!maximum){
+//     maximum = parseInt(prompt('masukan nilai Maksimal!'));
+// }
 
-const targetNum = Math.floor(Math.random() * maximum) +1;
-console.log(targetNum);
+// const targetNum = Math.floor(Math.random() * maximum) +1;
+// console.log(targetNum);
 
-let guess = parseInt(prompt('isi tebakan pertama kamu!'));
-let attempts = 1 ;
-while (parseInt(guess) !== targetNum) {
-    attempts++;
-    if (guess > targetNum) {
-        guess = parseInt(prompt('Tebakan terlalu tinggi, tebak lagi!'));
-    }else {
-        guess = parseInt(prompt('tebakan terlalu rendah, tebak lagi!'));
+// let guess = parseInt(prompt('isi tebakan pertama kamu!'));
+// let attempts = 1 ;
+// while (parseInt(guess) !== targetNum) {
+//     attempts++;
+//     if (guess > targetNum) {
+//         guess = parseInt(prompt('Tebakan terlalu tinggi, tebak lagi!'));
+//     }else {
+//         guess = parseInt(prompt('tebakan terlalu rendah, tebak lagi!'));
+//     }
+
+// }
+
+//     alert(`selamat tebakan kamu benar!, dengan percobaan ${attempts}`);
+
+// syntax for of
+
+// let noSepatu =[38,39,40,41,42];
+
+// for(let sepatu of noSepatu ){
+//     console.log(`ukuran sepatu ${sepatu}`);
+// }
+
+// for in
+// const nilaiAkademik = {
+
+// Fahrul : 10,
+// Andri : 9,
+// Robi : 9,
+// Rais :7,
+// Maul : 9,
+// Deni : 5,
+// }
+
+// for (let nilai in nilaiAkademik){
+//     console.log(`${nilai} memiliki nilai skor ${nilaiAkademik[nilai]}`);
+// }
+
+// let total = 0;
+// let scores = Object.values(nilaiAkademik);
+
+// for( let score of scores){
+//     total += score;
+// }
+// console.log(total/scores.length);
+
+
+//function
+
+// function lemparDadu () {
+
+//     console.log(Math.floor(Math.random()*6)+1 );
+
+// }
+
+// function salam(nama){
+
+//     console.log(`hai, ${nama} semangat belajar`);
+// }
+
+// salam('fahrul');
+
+//function 2 parameter
+
+// function penjumlahan(a,b){
+//     jumlah = a + b;
+//     console.log(jumlah);
+// }
+
+function jumlahkan(a, b)
+{
+    if( typeof a !== 'number' || typeof b !== 'number'){
+        return 'penjumlahan harus angka';
     }
 
+    return a+b;
 }
-
-    alert(`selamat tebakan kamu benar!, dengan percobaan ${attempts}`);
