@@ -301,12 +301,75 @@
 
 
 // belajar method
-const myMath = { //object
-    perkalian : function perkalian(a,b) // method
+// const myMath = { //object
+//     perkalian : function perkalian(a,b) // method
+//     {
+//         return a*b;
+//     },
+//     pembagian : function pembagian(a,b){
+//         return a/b;
+//     }
+// }
+
+// this dalam function 
+
+// const saya = {
+//     nama : 'Fahrul',
+//     hobi : 'Main DOTA',
+//     kenalan : function() {
+//         return `Hi, saya ${this.nama}, My Hobi is ${this.hobi}`
+//     }
+// }
+
+// try and catch
+// try {
+//     saya.kenalan();
+// } catch 
+// {
+//     console.log('Error!');
+
+// }
+
+// function teriak(msg){
+//     try
+//     {
+//         console.log(msg.toUpperCase());
+//     } 
+//     catch (error) {
+//         console.log(error);
+//         console.log('masukan type data string');
+//     }   
+// }
+
+// for each
+
+// const angka = [1,2,3,4,5,6,7,8,9];
+
+// angka.forEach(function(el){
+//     if (el % 2 === 0){
+//         console.log(el);
+//     }
+// });
+
+const animes = [
     {
-        return a*b;
+        title   : 'Attack Of Titan',
+        rating : 98,
     },
-    pembagian : function pembagian(a,b){
-        return a/b;
-    }
-}
+    {
+        title : 'naruto',
+        rating : 90,
+    },
+    {
+        title : 'bleach',
+        rating : 90,
+    },
+    {
+        title : 'One Piece',
+        rating : 99,
+    },
+];
+
+animes.forEach(function(anime){
+    console.log(`${anime.title} - ${anime.rating}/100`);
+});
