@@ -239,11 +239,74 @@
 //     console.log(jumlah);
 // }
 
-function jumlahkan(a, b)
-{
-    if( typeof a !== 'number' || typeof b !== 'number'){
-        return 'penjumlahan harus angka';
-    }
+// function jumlahkan(a, b)
+// {
+//     if( typeof a !== 'number' || typeof b !== 'number'){
+//         return 'penjumlahan harus angka';
+//     }
 
-    return a+b;
+//     return a+b;
+// }
+
+
+// lexical scope
+
+// function beliAC(){
+//     const merkAC = 'Daikin';
+
+//     function salesAC(){
+//         let penawaran = `kamu bisa membeli AC dengan merk ${merkAC}`;
+//         console.log(penawaran); 
+//     }
+// salesAC();
+// }
+
+
+//function expressions
+// const hasilPerpangkatan = function perpangkatan(hasil){
+//     return hasil*hasil ;
+// }
+
+//function sebagai argument function lain
+// function duaKali(func)
+// {
+//     func();
+//     func();
+// }
+
+// function lemparDadu(){
+//     const dadu = Math.floor(Math.random() * 6) +1;
+//     console.log(dadu);
+// }
+
+// return function 
+
+// function balikanFunction(){
+//     const rand = Math.random();
+
+//     if( rand > 0.1) {
+//         return function(){
+//     console.log(rand);
+//             console.log ('selamat angka anda lebih dari 0.10');
+//         };
+
+//     } else {
+//             console.log(rand);
+//         return function(){
+//             console.log('maaf silahkan coba lagi');
+//         };
+//     }
+
+// }
+
+
+// belajar method
+const myMath = { //object
+    perkalian : function perkalian(a,b) // method
+    {
+        return a*b;
+    },
+    pembagian : function pembagian(a,b){
+        return a/b;
+    }
 }
