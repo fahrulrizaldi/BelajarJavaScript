@@ -26,7 +26,7 @@
 //     console.log("Sudah Setengah Perjalanan kawan")
 // }
 
-// // fourth commit 
+// // fourth commit
 // const iniHari = prompt('isikan hari!').toLocaleLowerCase();
 
 // if (iniHari === 'senin'){
@@ -37,11 +37,11 @@
 //     console.log("Yah biasa aja")
 // }
 
-// kondisi if berlapis 
+// kondisi if berlapis
 //const password = prompt("Masukan password !")
 
 // if (password.length >= 6) {
-    
+
 //     if (password.indexOf(' ') === -1 ){
 //         console.log('Password Valid');
 //     }else{
@@ -78,8 +78,7 @@
 //     console.log("Akses di terima")
 // }
 
-
-// If Alternatif Statement 
+// If Alternatif Statement
 // const balonku = prompt ('Input Warna Balon');
 
 // switch(balonku){
@@ -125,13 +124,13 @@
 //nested loop
 // const pilihan = 'abcd';
 
-// for (let i=1 ; i <= 10 ; i++) 
+// for (let i=1 ; i <= 10 ; i++)
 // {
 //     console.log(`${i}. soal nomor ${i} :`);
 
 //     for (let j = 0 ; j < pilihan.length ; j++)
 //     {
-//         console.log(`${pilihan[j]} . pilihan jawaban` );    
+//         console.log(`${pilihan[j]} . pilihan jawaban` );
 //     }
 // }
 
@@ -216,7 +215,6 @@
 // }
 // console.log(total/scores.length);
 
-
 //function
 
 // function lemparDadu () {
@@ -248,7 +246,6 @@
 //     return a+b;
 // }
 
-
 // lexical scope
 
 // function beliAC(){
@@ -256,11 +253,10 @@
 
 //     function salesAC(){
 //         let penawaran = `kamu bisa membeli AC dengan merk ${merkAC}`;
-//         console.log(penawaran); 
+//         console.log(penawaran);
 //     }
 // salesAC();
 // }
-
 
 //function expressions
 // const hasilPerpangkatan = function perpangkatan(hasil){
@@ -279,7 +275,7 @@
 //     console.log(dadu);
 // }
 
-// return function 
+// return function
 
 // function balikanFunction(){
 //     const rand = Math.random();
@@ -299,7 +295,6 @@
 
 // }
 
-
 // belajar method
 // const myMath = { //object
 //     perkalian : function perkalian(a,b) // method
@@ -311,7 +306,7 @@
 //     }
 // }
 
-// this dalam function 
+// this dalam function
 
 // const saya = {
 //     nama : 'Fahrul',
@@ -324,7 +319,7 @@
 // try and catch
 // try {
 //     saya.kenalan();
-// } catch 
+// } catch
 // {
 //     console.log('Error!');
 
@@ -334,11 +329,11 @@
 //     try
 //     {
 //         console.log(msg.toUpperCase());
-//     } 
+//     }
 //     catch (error) {
 //         console.log(error);
 //         console.log('masukan type data string');
-//     }   
+//     }
 // }
 
 // for each
@@ -351,25 +346,40 @@
 //     }
 // });
 
-const animes = [
-    {
-        title   : 'Attack Of Titan',
-        rating : 98,
-    },
-    {
-        title : 'naruto',
-        rating : 90,
-    },
-    {
-        title : 'bleach',
-        rating : 90,
-    },
-    {
-        title : 'One Piece',
-        rating : 99,
-    },
-];
+// const animes = [
+//   {
+//     title: "Attack Of Titan",
+//     rating: 98,
+//   },
+//   {
+//     title: "naruto",
+//     rating: 90,
+//   },
+//   {
+//     title: "bleach",
+//     rating: 90,
+//   },
+//   {
+//     title: "One Piece",
+//     rating: 99,
+//   },
+// ];
 
-animes.forEach(function(anime){
-    console.log(`${anime.title} - ${anime.rating}/100`);
-});
+// let bestAnime = animes.reduce((bestAnime, currAnime) => {
+//   console.log(bestAnime, currAnime);
+//   if (bestAnime.rating < currAnime.rating) {
+//     return currAnime;
+//   }
+//   return bestAnime;
+// });
+
+// animes.forEach(function (anime) {
+//   console.log(`${anime.title} - ${anime.rating}/100`);
+// });
+
+// reduce function
+// const subtotal = [1500, 20000, 4000, 190000, 32000];
+
+// const total = subtotal.reduce((currentTotal, singleSubtotal) => {
+//   return currentTotal + singleSubtotal;
+// });
